@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cards</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center h-screen bg-black gap-10">
+    <section
+      id="card-container"
+      class="w-[320px] relative p-10 bg-white overflow-hidden hover:shadow-2xl transition-shadow duration-300 before:content-[''] before:absolute before:left-0 before:bottom-[calc(-100%+10px)] before:w-full before:h-full before:bg-pink-900 before:transition-all before:duration-500 hover:before:bottom-0 hover:text-white"
+    >
+      <article id="content" class="relative z-20 transition-all duration-500">
+        <h2 class="text-4xl font-extrabold">Title</h2>
+        <p class="text-xl font-semibold py-5 my-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+          omnis quo non placeat magnam. Quaerat velit architecto molestiae
+          reiciendis. Officia veniam doloribus, porro dolore nemo sint repellat
+          fuga earum amet? Lorem ipsum dolor sit amet consectetur
+        </p>
+        <a class="text-black bg-blue-300 p-3 rounded-lg" href="">Read More</a>
+      </article>
+    </section>
+
+    <section
+      id="card"
+      class="relative w-80 h-80 bg-white shadow-green-300 group border-5 before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-green-300 before:transition-all before:duration-500 before:-z-10 hover:before:transform hover:before:rotate-12 hover:before:box-shadow-lg group-hover:before:shadow-green-700 after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-orange-300 after:transition-all after:duration-500 after:-z-10 hover:after:transform hover:after:rotate-6 hover:after:box-shadow-lg group-hover:after:shadow-orange-700"
+    >
+      <div
+        id="img-box"
+        class="absolute inset-2 transition-all duration-500 group-hover:bottom-10"
+      >
+        <img
+          src="https://images.pexels.com/photos/30411875/pexels-photo-30411875/free-photo-of-portrait-of-young-woman-with-cosmos-flowers-in-hanoi.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+          class="absolute top-0 left-0 w-full h-full object-cover z-10"
+          alt="Olivia"
+        />
+      </div>
+      <article
+        id="details"
+        class="absolute bottom-2 right-2 left-2 h-8 text-center text-xl font-extrabold"
+      >
+        <h2>Olivia</h2>
+      </article>
+    </section>
+  </body>
+</html>
